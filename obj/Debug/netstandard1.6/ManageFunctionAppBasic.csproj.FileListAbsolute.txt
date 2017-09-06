@@ -1,2 +1,0 @@
-C:\Sources\dotnet-samples\app-service-dotnet-manage-functions\bin\Debug\netstandard1.6\ManageFunctionAppBasic.deps.json
-C:\Sources\dotnet-samples\app-service-dotnet-manage-functions\obj\Debug\netstandard1.6\ManageFunctionAppBasic.csproj.CoreCompileInputs.cache
