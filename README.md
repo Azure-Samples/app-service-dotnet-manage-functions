@@ -4,19 +4,19 @@ languages:
 - csharp
 products:
 - azure
-services: App-Service
-platforms: dotnet
-author: yaohaizh
+extensions:
+- services: App-Service
+- platforms: dotnet
 ---
 
 # Getting started on managing Functions using C# #
 
-          Azure App Service basic sample for managing function apps.
-           - Create 3 function apps under the same new app service plan:
-             - 1, 2 are in the same resource group, 3 in a different one
-             - 1, 3 are under the same consumption plan, 2 under a basic app service plan
-           - List function apps
-           - Delete a function app
+ Azure App Service basic sample for managing function apps.
+  - Create 3 function apps under the same new app service plan:
+    - 1, 2 are in the same resource group, 3 in a different one
+    - 1, 3 are under the same consumption plan, 2 under a basic app service plan
+  - List function apps
+  - Delete a function app
 
 
 ## Running this Sample ##
