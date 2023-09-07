@@ -70,13 +70,13 @@ namespace ManageFunctionAppBasic
                 var planData = new AppServicePlanData(region)
                 {
                 };
-                var planResource_lro = planCollection.CreateOrUpdate(Azure.WaitUntil.Completed, planName, webSiteData);
+                var planResource_lro =await planCollection.CreateOrUpdateAsync(Azure.WaitUntil.Completed, planName, webSiteData);
                 var planResource = planResource_lro.Value;
                 SiteFunctionCollection functionAppCollection = webSite.GetSiteFunctions();
                 var functionData = new FunctionEnvelopeData()
                 {
                 };
-                var funtion_lro = functionAppCollection.CreateOrUpdate(Azure.WaitUntil.Completed, app1Name, functionData);
+                var funtion_lro =await functionAppCollection.CreateOrUpdateAsync(Azure.WaitUntil.Completed, app1Name, functionData);
                 var function = funtion_lro.Value;
 
                 Utilities.Log("Created function app " + function.Data.Name);
